@@ -1,11 +1,11 @@
+export const runtime = 'edge'
+
 import Image from "next/image";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import InfoGempa from "@/components/InfoGempa";
 import getDataGempa from "@/functions/fetcher";
 import { DataGempaTemplate, DataGempaType } from "@/types/dataGempa";
-
-export const runtime = 'edge'
 
 export const metadata: Metadata = {
   title: "WRS-TVMEDIA Clone",
