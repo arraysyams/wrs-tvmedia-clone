@@ -5,6 +5,8 @@ import InfoGempa from "@/components/InfoGempa";
 import getDataGempa from "@/functions/fetcher";
 import { DataGempaTemplate, DataGempaType } from "@/types/dataGempa";
 
+export const runtime = 'edge'
+
 export const metadata: Metadata = {
   title: "WRS-TVMEDIA Clone",
   description: "WRS-TVMEDIA Clone",
