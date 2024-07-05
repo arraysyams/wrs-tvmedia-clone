@@ -1,8 +1,14 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import styles from "./page.module.css";
 import InfoGempa from "@/components/InfoGempa";
 import getDataGempa from "@/functions/fetcher";
 import { DataGempaTemplate, DataGempaType } from "@/types/dataGempa";
+
+export const metadata: Metadata = {
+  title: "WRS-TVMEDIA Clone",
+  description: "WRS-TVMEDIA Clone",
+};
 
 export default async function Home() {
   let errTxt: string = ""
