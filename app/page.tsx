@@ -10,29 +10,19 @@ export const metadata: Metadata = {
   description: "WRS-TVMEDIA Clone",
 };
 
-// export default async function Home() {
-//   let errTxt: string = ""
-//   let dataGempa: DataGempaType = DataGempaTemplate;
-//   try {
-//     const fetcher = await getDataGempa();
-//     if (fetcher) {
-//       dataGempa = fetcher;
-//     }
-//   } catch (error:any) { errTxt = error?.message || "Terjadi kesalahan" }
-//   return (
-//     <main className={styles.main}>
-//       <div className={styles.container}>
-//         { errTxt ? <span>{errTxt}</span> : <InfoGempa initialDataGempa={dataGempa} />}
-//       </div>
-//     </main>
-//   );
-// }
-
-export default async function Test() {
+export default async function Home() {
+  let errTxt: string = ""
+  let dataGempa: DataGempaType = DataGempaTemplate;
+  try {
+    const fetcher = await getDataGempa();
+    if (fetcher) {
+      dataGempa = fetcher;
+    }
+  } catch (error:any) { errTxt = error?.message || "Terjadi kesalahan" }
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <span>WRS-TVMEDIA Clone</span>
+        { errTxt ? <span>{errTxt}</span> : <InfoGempa initialDataGempa={dataGempa} />}
       </div>
     </main>
   );
